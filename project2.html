@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+ <meta charset="utf-8">
+ <link rel="stylesheet" type="text/css" href="project2.css">
+ <title>Project 1</title>
+</head>
+
+<body>
+ <div class="project">
+  <header>
+    <h1 class="title"> Project 1: Make your Web Page </h1>
+  </header>
+
+  <div class="session">
+   <h2 class="session-title"> [1] The Basics of Web and HTML </h2> 
+    <div class="description"> 
+     <p> I. Web pages are composed with HTML. Understanding the basic syntax of HTML is needed to make a web page. </p> 
+     <p> II. Using <b>tags</b>, we can <em>insert images/links</em> and <em>change plain text into bold or italic</em>. </p>
+     <p> III. The set of opening tag, content and closing tag is called an <b><em>"element"</em></b>. There are <b>inline</b> and <b>block</b> elements. The block elements makes <em>invisible boxes</em> <small>while inline don't</small>. </p> 
+     <p> IV. We can add style by using CSS. And the whole HTML document has a structure, <small>which we would be learning in future lectures.</small> </p>
+    </div> 
+  </div>
+
+  <div class="session">
+   <h2 class="session-title"> [2] Creating a Structured Document with HTML </h2>
+    <div class="description"> 
+     <h3 class="description-title"> I. Elements of web page </h3>  
+      <ol type="i"> 
+       <li> HTML - structure </li>
+       <li> CSS - style </li> 
+       <li> Javascript - interactive component</li>
+      </ol>
+     <h3 class="description-title"> II. Structure of HTML </h3> 
+      <ul> 
+       <li> <b>DOCTYPE html</b> on the first line declared that the document is a HTML document </li>
+       <li> Some tags are used to describe the structure: <em> html, head, title, body, h1 (heading), p (paragraph) </em> </li> 
+       <li> We <b>indent</b> while writing codes to make the structure of HTML easily visible: tree structure - able to expand or collapse, encapsuled  </li>
+      </ul>
+     <h3 class="description-title"> III. Web page are made up by boxes </h3> 
+      <ul> 
+       <li> Add description of boxes by namming the class </li>
+      </ul>
+      <p> - Next session: how to link style with HTML content </p>
+     <h3 class="description-title"> IV. Computer program needs to be structured. </h3>
+      <p>
+       That means there are some rules when writing codes. The computer reads the lines from the top to the bottom. So the logical flow of the code have to be aligned in the same direction. The code's have to be divided into meaningful components. And we need to minimize repeating same lines. If we know the structure, we can predict the organization of code's content. Well structured programs are easily read and understood.
+      </p>
+      <p> There are several benefits of avoiding repetition. First, we can minimize the total length of the code. Therefore, there are less to write, less risks of making errors and less to read. Second, it makes future changes easier and simple by putting same components together. If we have written the same codes several times, we should have find where the same parts are and change all of them one after one. 
+      </p>
+    </div>
+  </div>
+
+  <div class="session">
+   <h2 class="session-title"> [3] Adding CSS Style to HTML Structure </h2>
+    <div class="description"> 
+     <h3 class="description-title"> I. Link the <b>style.css</b> file in the head element </h3>
+      <div class="code"> &lt;link rel="stylesheet" href="style.css"&gt; </div>
+      <p> *css file have to be in the same folder with html </p>
+     <h3 class="description-title"> II. Using <b>Selector</b> properly, we can avoid repetition </h3>
+      <ul> 
+       <li> example: ID, class, tag, attribute, positional </li>
+      </ul>
+     <h3 class="description-title"> III. Box model </h3> 
+      <ul> 
+       <li> We can define the content, padding, border and margin. </li>
+       <li> By using "box-sizing:border-box;", the size includes the border and padding (not the margin). </li>
+       <li> <b><em>Flexbox</em></b> enables to arrange boxes side by side. </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class = "summary">
+   <h2 class = "summary-title"> Summary </h2>
+    <div class = "summary-content">
+     <ol type="A">
+      <li> Think of the structure! Draw all the boxes. </li>
+      <li> Think about the repeated style and semantic elements. </li>
+      <li> Write your HTML code. </li>
+      <li> Add the style starting from bigger to smaller components.</li> 
+     </ol>
+    </div>
+  </div>
+ </div>
+
+ <div class="project">
+  <header>
+    <h1 class="title"> Project 2: Automate your page </h1>
+  </header>
+
+  <div class = "session">
+   <h2 class = "session-title"> [1] Intro to serious programming </h2> <div class="description">
+     <p>
+      I. We can do any computation by designing a program using programming language (like Python!) to make the computer do processing step by step and eventually accomplish the final goal. 
+     </p> 
+     <p>
+      II. The python interpreter reads and execute the program.
+     </p> 
+     <p>
+      III. BE CAREFUL!! The program must exactly adhere to the strict grammatical rule. Unless "Syntax error" will appear. And the meaning of the programming language must be clear (interpreted in only one way), not ambiguous. 
+     </p>
+    </div>
+  </div>
+
+  <div class = "session">
+   <h2 class = "session-title"> [2] Variables and strings </h2> 
+    <div class="description">
+     <p> I. We can assign a number or string into a <b> variable </b> by using "=". </p>
+      <div class="code"> variable name = number or string </div> <br> 
+      <div class="code"> "=" </div> : Puts the content on the right into the left. 
+     <p> II. Variables can be repeatly used and updated to a new value. Useful in loops and functions. </p>
+     <p> III. Strings are chain of characters or numbers. We can index, parcellate strings and find subcomponent strings. Useful in text mining. </p> 
+      <div class="code"> "string"[a:b] </div> <br> 
+      <div class="code"> &lt;string&gt;.find(&lt;component&gt;) </div> <br>
+      the location where the first found component starts <br> 
+      <div class="code"> &lt;string&gt;.find(&lt;component&gt;, number) </div> <br> 
+      the location where the component (found after the number th location) starts 
+    </div>
+  </div>
+
+  <div class = "session">
+   <h2 class = "session-title"> [3] Input-function-output </h2> 
+    <div class="description">
+     <p> I. Function(procedure) allows us to store the repeating contents and call the function when needed, not writing the same codes over and over. </p>
+     <p> II. We can make functions. When needed, we call the function and give appropriate number of inputs then the output would be returned! </p>
+      <div class = "code"> "function name" (input1, input2, ...): 
+       <div class="indent"> "description of the function" </div> 
+       <div class="indent"> return "output </div>
+      </div>
+    </div>
+  </div>
+
+  <div class = "session">
+   <h2 class = "session-title"> [4] Decision and Repetition: If and While loop </h2> 
+    <div class="description">
+     <p> 
+      I. Conditional execution of codes are able by using <b>if statements</b>. The code within the the block would be executed only when the if statement is <b>true</b>. </p>
+      <div class="code"> if "statement": <br> 
+       <div class="indent">
+       code to do when the if statement is true 
+       </div> <br>
+       else: 
+      </div> <br>
+      => We can add what to do when the if statement is not true.
+     <p>
+      II. If statement executes one or zero times. While loop would be repeated <b>while</b> it is true. We can use while loop to do something repeated for a limited time. </p>
+      <div class = "code"> i = 0 <br>
+       while i &lt; 10: <br>
+       <div class="indent"> 
+        print i <br>
+        i = i + 1
+       </div>
+      </div> <br> 
+      => This while loop would print numbers until the i is smaller than 10: 0 to 9. 
+     <p> 
+      III. Infinite loop and break statement! If the while loop is always true, the loop would keep going which makes it an <b>Infinite loop!!</b> We have to check carefully, whether the loop ends. Break statement is useful to ensure the termination. </p> 
+      <div class="code"> While statement: <br>
+       <div class="indent"> if statement: <br> 
+       break 
+       </div> <br> 
+      </div>
+      <br>
+      => When the if statement comes true, the interpreter would come out from the while loop and go to the next line of code. 
+    </div>
+  </div>
+
+  <div class = "session">
+   <h2 class = "session-title"> [5] Structured data: lists and for loop </h2> 
+    <div class="description">
+     <p> 
+      I. String is a type of structural data where the elements are characters. Lists include all types of elements like characters, strings, numbers and nested lists. </p>
+      <div class="code"> list = ['number', 'string', 'list', characters'] </div> <br>
+      <div class="code"> list[0] </div> :select first element of the list <br>
+      <div class="code"> list[1:3] </div> :select second to third element of the list
+     <p> 
+      II. The <b>BIG</b> difference of lists from strings: Mutation and aliasing. </p>
+      <ol>
+       <li> Mutation: We can change the element of lists. </li>
+       <li> Aliasing: If we change the list, the variable that are assigned to that object also changes together. </li>
+      </ol>
+      <div class="code">
+       list = [a, b, c, d] <br>
+       newlist = list  <br>
+       list[2] = [e] <br>
+       print list <br>
+       <div class="indent">
+        list = [a, b, e, d] </div> 
+        <br>
+       print newlist <br>
+       <div class="indent">
+       newlist = [a, b, e, d] </div> 
+      </div> <br>
+       => Python is not assigning a new list to the variable. The object is actually changed. Thus new assignment nor return statement (in functions) are not needed. 
+     <p> III. Lists operations </p>
+      <ol>
+       <li> 'list'.append('element') : adds the element to the original list </li>
+       <li> 'list1'+'list2' : produces a new list with the elements of list1 and list2 </li>
+       <li> len('list') : number of the elements within the list <br>
+        <div class="code"> len(['a','b', ['c','d']]) = 3 </div>
+       </li>
+       <li> 'list'.index('element') : the index of the first appearance of element in the list <br>
+        <div class="code"> p.index(t)</div>
+       </li>
+      </ol>
+     <p> IV. For loops and Lists: Using for loops, we can repeat the codes over the elements in a list. </p>
+      <div class = "code"> for e in p: <br>
+       <div class="indent"> insert codes like if statements 
+       </div>
+      </div>
+      <ol> 
+       <li> Find elements within the list <br> Useful if statement:
+        <div class="code"> "If A in B:" or "If A not in B" 
+        </div>
+       </li>
+       <li> Repeat same procedure over the elements, one-by-one </li>
+      </ol>
+    </div>
+  </div>
+  <br>
+
+  <div class = "summary">
+   <h2 class = "summary-title"> Summary </h2>
+    <div class = "summary-content">
+     <ul>
+      <li> We can assign numbers, letters, words .. in a variable. </li>
+      <li> Types of data: integer, float, string, list .. </li>
+      <li> Keep mind of useful string and list operations and how to find and extract the exact part you want. </li>
+      <li> Break problems into parts and make several functions unstead of repeating or making a big, complex code. </li>
+      <li> Using if statement, while loop and for loop, we can make a decision tree and make computer do flexible jobs. </li> 
+     </ul>
+    </div>
+  </div>
+ </div>
+</body>
